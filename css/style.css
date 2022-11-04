@@ -648,9 +648,8 @@ margin-right: 10px;
 .icon-smartphone:link:hover.icon{
   color: var(--accent-color);
 }
-.conection{
 
-}
+
 /*our-describe*/
 
 .box{
@@ -748,31 +747,6 @@ fill: #AFB1B8;
 background-color: var(--accent-color);
 fill: #FFFFFF;
 }
-
-/*
-.icons-link:hover .icon-instagram-2,
-.icons-link:focus .icon-instagram-2{
-background-color: var(--accent-color);
-fill: #FFFFFF;
-}
-.icons-link:hover .icon-twitter-1,
-.icons-link:focus .icon-twitter-1{
-background-color: var(--accent-color);
-fill: #FFFFFF;
-}
-
-.icons-link:hover .icon-facebook-1,
-.icons-link:focus .icon-facebook-1{
-background-color: var(--accent-color);
-fill:  #FFFFFF;
-}
-
-.icons-link:hover .icon-linkedin-1,
-.icons-link:focus .icon-linkedin-1{
-background-color: var(--accent-color);
-fill: #FFFFFF;
-}
-*/
 
 .namec{
 text-align: center;
@@ -1071,25 +1045,28 @@ border-radius: 50%;
 transition: 250ms var(--timing-function);
 right: 8px;
 top: 8px;
-background-image: url("./images/close.svg");
+background-image: url(../images/close.svg);
+background-repeat: no-repeat;
+background-position: center;
+color: black;
 }
 
-.modal-svg:hover,
-.modal-svg:focus{
-fill: var(--accent-color);
+.modal-svg:hover .close,
+.modal-svg:focus .close{
+color: var(--accent-color);
 }
 
+/*
 .close{
-  fill: black;
-  width: 18px;
-  height: 18px;
+  color: black;
+ 
 }
 
 .modal-form-checkbox {
   position: relative;
   margin-bottom: 30px;
 }
-
+*/
 .checkbox-label {
   cursor: pointer;
   display: flex;
