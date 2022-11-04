@@ -342,8 +342,8 @@
       </section>
     </main>
     <footer class="footer">
+      <div class="container-f">
       <div class="footer-fortwo">
-        <div class="conection">
           <a href="/" class="flogo"><span class="logos">Web</span>Studio</a>
           <address class="addresfoot">
             <ul class="u">
@@ -357,8 +357,8 @@
                 <a href="tel:+380961111111" class="list-tel">+38 096 111 11 11</a>
               </li>
             </ul>
-          </address class="addresfoot">
-        </div>
+          </address>
+      </div>
         <div class="footer-icons-link">
     <p class="foter-link-title">ПРИЄДНУЙТЕСЬ</p>
     <ul class="footer-link-list">
@@ -393,20 +393,16 @@
   </ul>
   </div>
         <div class="form-button-foot">
-        <form class="form">
           <p class="foter-link-tit">Підписатись на підписку</p>
+        <form class="form-pidp">
           <input class="input-mail" type="text" name="e-mail" id="e-mail" placeholder="E-mail" autofocus />
-          </form>
               <button type="submit" class="foot-em-bottom">Підписатись
               <svg class="icon icon-icon-send" width="24px" height="24px">
                 <use xlink:href="./images/icons.svg#icon-icon-send"></use>
               </svg>
               </button>
+        </form>
         </div>
-      
-      
-    </footer>
-
     <div class="backdrop is-hidden" data-modal>
      <div class="modal">
       <button type="button" class="modal-svg" data-modal-close>
@@ -419,7 +415,7 @@
         <span class="form-field">
           <label class="formlabel-name">Ім'я</label>
           <input type="text" class="modal-form-input" required="" pattern="{Aя-Za-яА-ЯіІїЇ}" name="use_name">
-          <svg class="icon-person-black-18dp-1" wight="12" height="12">
+          <svg class="icon-person-black-18dp-1" width="18px" height="18px">
             <use xlink:href="./images/icons.svg#icon-person-black-18dp-1"></use>
           </svg>
         </span>
@@ -428,7 +424,7 @@
         <span class="form-field">
           <label class="formlabel-name">Телефон</label>
           <input type="text" class="modal-form-input" required="" pattern="{Aя-Za-яА-ЯіІїЇ}" name="use_name">
-          <svg class="icon-phone-black-18dp-1" wight="13" height="13">
+          <svg class="icon-phone-black-18dp-1" width="18px" height="18px">
             <use xlink:href="./images/icons.svg#icon-phone-black-18dp-1"></use>
           </svg>
         </span>
@@ -437,33 +433,35 @@
         <span class="form-field">
           <label class="formlabel-name">Пошта</label>
           <input type="text" class="modal-form-input" required="" pattern="{Aя-Za-яА-ЯіІїЇ}" name="use_name">
-          <svg class="icon-email-black-18dp-1" wight="15" height="12">
+          <svg class="icon-email-black-18dp-1" width="15" height="12">
             <use xlink:href="./images/icons.svg#icon-email-black-18dp-1"></use>
           </svg>
         </span>
       </form>
       <form class="modal-form">
         <span class="form-message">
-          <label for="name" class="formlabel-name">Коментар</label>
+          <label class="formlabel-name">Коментар</label>
           <textarea class="modal-form-message" name="comment" id="message" placeholder="Введіть текст"></textarea>
       </span>
       </form>
+      <form class="modal-form"></form>
       <div class="chegk">
-      <span class="form-check">
-        <label class="modal-form-check">
-          <input type="checkbox" class="modal-check" name="user_policy" required="">
-        <svg class="icon-Vector-5" wight="11" height="8">
+        <input type="checkbox" class="modal-check visually-hidden"
+     name="user_policy" value="true" id="privacy">
+        <label for="privacy" class="modal-form-check">
+        <span class="form-check">
+        <svg class="icon-Vector-5" width="11" height="8">
           <use xlink:href="./images/icons.svg#icon-Vector-5"></use>
         </svg>
-         <p class="check-p">Погоджуюся з розсилкою та приймаю </p><a class="titl-contract" href="#"> Умови договору </a>
+        </span>Погоджуюся з розсилкою та приймаю<a class="titl-contract" href="#"> Умови договору </a>
         </label>
-      </span>
       </div>
+    
       <button type="submit" class="modal-form-submit">Відправити</button>
+    </form>
      </div>
     </div>
-
-
+  </footer>
     <script src="./js/modal.js"></script>
   </body>
 </html>
