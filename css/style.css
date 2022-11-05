@@ -1045,28 +1045,16 @@ border-radius: 50%;
 transition: 250ms var(--timing-function);
 right: 8px;
 top: 8px;
-background-image: url(../images/close.svg);
 background-repeat: no-repeat;
 background-position: center;
-color: black;
+color: #000000;
 }
 
-.modal-svg:hover .close,
-.modal-svg:focus .close{
-color: var(--accent-color);
+.modal-svg:hover,
+.modal-svg:focus{
+fill: var(--accent-color);
 }
 
-/*
-.close{
-  color: black;
- 
-}
-
-.modal-form-checkbox {
-  position: relative;
-  margin-bottom: 30px;
-}
-*/
 .checkbox-label {
   cursor: pointer;
   display: flex;
@@ -1175,7 +1163,7 @@ justify-content: center;
 
 .form-button-foot{
 gap: 10px;
-margin-left: 93px;
+margin-left: auto;
 }
 
 .input-mail{
@@ -1202,6 +1190,7 @@ outline: none;
 .foot-em-bottom:focus{
 background-color: var(--accent-color);
 }
+
 .form-pidp{
 display: flex;
 gap: 12px;
@@ -1269,6 +1258,7 @@ margin-top: 10px;
 .modal-form-input {
 position: relative;
 margin-top: 4px;
+padding-left: 40px;
 }
 
 .modal-form-message:hover,
