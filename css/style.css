@@ -1049,6 +1049,10 @@ background-repeat: no-repeat;
 background-position: center;
 color: #000000;
 }
+.close{
+width: 11px;
+height: 11px;
+}
 
 .modal-svg:hover,
 .modal-svg:focus{
@@ -1061,6 +1065,7 @@ fill: var(--accent-color);
   justify-content: center;
   align-items: center;
   margin-top: 25px;
+  gap: 10px;
 }
 
 .checkbox-input {
@@ -1186,6 +1191,11 @@ color: rgba(255, 255, 255, 0.6);
 outline: none;
 }
 
+.input-mail:focus{
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
 .foot-em-bottom:hover,
 .foot-em-bottom:focus{
 background-color: var(--accent-color);
@@ -1202,6 +1212,7 @@ width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
 margin: 0 auto;
+align-items: baseline;
 }
 
 .foot-em-bottom{
@@ -1222,6 +1233,7 @@ letter-spacing: 0.06em;
 color: #FFFFFF;
 cursor: pointer;
 border: none;
+background-color: #2196F3;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1246,12 +1258,14 @@ margin-top: 10px;
   display: block;
   width: 448px;
   height: 40px;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
   border-radius: 4px;
   border-color: rgba(33, 33, 33, 0.2);
   outline: transparent;
-  fill: var(--title-text-color);
   transition: border-color var(--title-text-color);
 }
 
@@ -1312,7 +1326,7 @@ font-size: 14px;
 line-height: 14px;
 letter-spacing: 0.01em;
 padding: 12px 16px;
-color: rgba(117, 117, 117, 0.5);
+color: rgb(117 117 117 / 76%);
 resize: none;
 }
 
@@ -1376,7 +1390,9 @@ color: var(--primary-white-color);
 background-color: var(--accent-color);
 border: none;
 border-radius: 4px;
-margin: 30px auto 40px;
+margin-top: 30px;
+margin-left: auto;
+margin-right: auto;
 transition-property: background-color, fill;
 transition-timing-function: linear;
 cursor: pointer;
